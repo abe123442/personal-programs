@@ -1,0 +1,22 @@
+<DOCTYPE html>
+
+<html>
+<head>
+    <title>Mr.Scratch</title>
+</head>
+
+<body>
+<div id="container">
+Question: <input type="text" id ="questionBox"><br>
+Username: <input type="text" id ="usernameBox"><br>
+Password: <input type="password" id ="passwordBox"><br>
+<input type="button" id="answer" value="Answer the question!" onclick="buttonclick();">
+</div>
+<script>
+    function buttonclick()  {
+	var password = document.getElementById("passwordBox").value;
+	document.getElementById("container").innerHTML = password;
+    }
+</script>
+</body>
+</html>
